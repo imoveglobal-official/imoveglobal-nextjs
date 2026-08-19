@@ -9,20 +9,24 @@ const SUBMISSION_TOKEN = process.env.NEXT_PUBLIC_FORM_SUBMISSION_TOKEN || 'YOUR_
 
 export type UserType = 'institute' | 'myself'
 
-export interface FormData {
+// Form values are collected from text/select/checkbox inputs; `terms` is a
+// boolean, every other field is a string. All optional to match the original
+// loose runtime object that starts as `{}`.
+export interface RegistrationFormData {
   name?: string
   email?: string
   contact?: string
   city?: string
   state?: string
   institute?: string
-  designation?: string
   education?: string
+  designation?: string
   reason?: string
   communicationMode?: string
   preferredTime?: string
   studentCount?: string
   notes?: string
+  terms?: boolean
 }
 
 export interface SubmitResult {
@@ -34,7 +38,7 @@ export interface SubmitResult {
 /**
  * Format form data for email
  */
-const formatFormData = (data: FormData, userType: UserType) => {
+const formatFormData = (data: RegistrationFormData, userType: UserType) => {
   const timestamp = new Date().toLocaleString('en-IN', {
     timeZone: 'Asia/Kolkata',
     dateStyle: 'full',
@@ -84,7 +88,7 @@ const formatFormData = (data: FormData, userType: UserType) => {
 /**
  * Submit form data to Google Apps Script
  */
-export const submitForm = async (formData: FormData, userType: UserType): Promise<SubmitResult> => {
+export const submitForm = async (formData: RegistrationFormData, userType: UserType): Promise<SubmitResult> => {
   try {
     const formattedData = formatFormData(formData, userType)
 
