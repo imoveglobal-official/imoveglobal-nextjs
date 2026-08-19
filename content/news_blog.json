@@ -1,0 +1,146 @@
+{
+  "_instructions": {
+    "READ THIS FIRST": "This file controls all News and Blog posts on the website. No coding knowledge needed — just follow the steps below.",
+    "HOW TO ADD A NEWS POST": [
+      "1. Scroll down to the 'news' array.",
+      "2. After the opening '[', paste a copy of '_template.newsEntry' above the first existing entry.",
+      "3. Fill in your title, date, image path, and description lines.",
+      "4. Make sure a comma separates each entry.",
+      "5. Commit the file on GitHub."
+    ],
+    "HOW TO ADD A BLOG POST": [
+      "Same steps as above but use '_template.blogEntry' and paste inside the 'blogs' array."
+    ],
+    "DESCRIPTION FORMAT": [
+      "Each paragraph = one string in the array.",
+      "Bullet point lines: start with '• ' (bullet + space).",
+      "Numbered lines: start with '1. ', '2. ' etc.",
+      "Section headings: just write the heading text as its own string.",
+      "Bold text: wrap with **double asterisks** e.g. **important word**",
+      "Italic text: wrap with _single underscores_ e.g. _emphasized word_",
+      "Underline text: wrap with __double underscores__ e.g. __underlined word__"
+    ],
+    "IMAGES": [
+      "Upload images to: public/news/YOUR_FOLDER_NAME/",
+      "Reference them as: /news/YOUR_FOLDER_NAME/filename.jpg",
+      "'image' = thumbnail shown on the card.",
+      "'description_image' = optional gallery array shown inside the article. Remove this field entirely if no gallery is needed."
+    ],
+    "DATE FORMAT": "Month DD, YYYY — example: June 15, 2026"
+  },
+  "_template": {
+    "newsEntry": {
+      "category": "NEWS",
+      "title": "Your News Title Here",
+      "date": "Month DD, YYYY",
+      "image": "/news/YOUR_FOLDER_NAME/title_image.jpeg",
+      "description_image": [
+        "/news/YOUR_FOLDER_NAME/image1.jpeg",
+        "/news/YOUR_FOLDER_NAME/image2.jpeg"
+      ],
+      "description": [
+        "Write your opening paragraph here.",
+        "Write a second paragraph here.",
+        "Optional Section Heading",
+        "Paragraph under the heading.",
+        "• First bullet point",
+        "• Second bullet point",
+        "Closing paragraph."
+      ]
+    },
+    "blogEntry": {
+      "category": "BLOG",
+      "title": "Your Blog Title Here",
+      "date": "Month DD, YYYY",
+      "image": "/news/YOUR_FOLDER_NAME/title_image.jpeg",
+      "description_image": [
+        "/news/YOUR_FOLDER_NAME/image1.jpeg"
+      ],
+      "description": [
+        "Opening paragraph of your blog post.",
+        "Second paragraph.",
+        "Section Heading",
+        "Paragraph under that section.",
+        "• Bullet point one",
+        "• Bullet point two",
+        "1. Numbered point one",
+        "2. Numbered point two",
+        "Closing paragraph."
+      ]
+    }
+  },
+  "news": [
+    {
+      "category": "NEWS",
+      "title": "IMOVEGLOBAL Arrives in Lucknow, Uttar Pradesh. Partners in XII International Mediation Competition 2026.",
+      "date": "March 8, 2026",
+      "image": "/news/XII-International-Mediation-Competition-2026/title_image.jpeg",
+      "description_image": [
+        "/news/XII-International-Mediation-Competition-2026/description_image.png"
+      ],
+      "description": [
+        "Imoveglobal Pvt. Ltd. is proud to announce its association with the XII International Mediation Competition 2026, hosted by Dr. Ram Manohar Lohiya National Law University from 20–22 March 2026.",
+        "Recognized as one of the leading academic platforms in the field of Alternative Dispute Resolution (ADR), the International Mediation Competition brings together distinguished law schools, ADR professionals, scholars, and institutions from across the globe. The event serves as an international forum for the exchange of ideas, collaboration, and the advancement of mediation as a vital mechanism for resolving complex disputes in an increasingly interconnected world.",
+        "Now in its twelfth edition, the competition reflects over a decade of excellence and commitment to promoting mediation, dialogue, and collaborative problem-solving within the global legal community. Participants from renowned universities and institutions worldwide come together to demonstrate practical mediation skills while engaging with leading experts and practitioners in the field.",
+        "Imoveglobal (EGPT) is honored to be associated with such a prestigious international initiative. Our participation underscores our commitment to supporting platforms that foster global academic engagement, professional development, and meaningful dialogue among future leaders.",
+        "At Imoveglobal Pvt. Ltd., we believe that exposure to international platforms and collaborative academic environments plays a critical role in shaping globally competent professionals. Being part of the XII International Mediation Competition marks an important milestone in our journey toward strengthening global educational partnerships and expanding opportunities for students and institutions alike.",
+        "Through initiatives such as this, Imoveglobal.org continues to contribute to the development of a more connected, collaborative, and globally engaged academic ecosystem."
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "category": "BLOG",
+      "title": "Imoveglobal Collaborates with Dr. Ram Manohar Lohiya National Law University for the XII International Mediation Competition",
+      "date": "March 30, 2026",
+      "image": "/news/dr_ram_manhohar_lohiya_national_law_uinversity/title.jpeg",
+      "description_image": [
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img1.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img2.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img3.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img4.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img5.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img6.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img7.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img8.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img9.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img10.jpeg",
+        "/news/dr_ram_manhohar_lohiya_national_law_uinversity/img11.jpeg"
+      ],
+      "description": [
+        "Imoveglobal Pvt. Ltd. proudly partnered with Dr. Ram Manohar Lohiya National Law University, Lucknow as the Language Proficiency Partner for the XII International Mediation Competition, marking a meaningful step toward integrating language excellence with legal expertise.",
+        "At the global level, mediation is not just about legal understanding—it is about how effectively ideas are communicated, negotiated, and resolved. This collaboration highlighted the growing importance of English proficiency as a critical skill in international legal environments.",
+        "Elevating Communication in Global Legal Spaces",
+        "Through this partnership, Imoveglobal introduced its flagship program, EGPT Senior, designed to equip students with the language proficiency and strategic communication skills required to excel in global academic and professional settings.",
+        "Unlike traditional preparation models, EGPT Senior focuses on:",
+        "• Real-world communication skills",
+        "• Complete language development across Reading, Writing, Listening, and Speaking",
+        "• Exam-level readiness through authentic simulation and structured practice",
+        "For participants of the mediation competition, this meant gaining an added edge—the ability to articulate, persuade, and perform with clarity under pressure.",
+        "EGPT Senior: Beyond Test Preparation",
+        "EGPT Senior is more than a preparation tool—it is a gateway to global opportunities.",
+        "Built around internationally aligned standards such as TOEFL and IELTS, the program offers:",
+        "1. Authentic exam environments to build confidence and reduce anxiety",
+        "2. Detailed performance analytics for targeted improvement",
+        "3. Strategic preparation frameworks that translate into real results.",
+        "By combining precision, practice, and performance, EGPT Senior ensures that students are not only prepared for exams—but ready for the demands of global education and careers.",
+        "Strengthening Pathways to Global Success",
+        "With India emerging as a leading contributor to the global student ecosystem, English proficiency has become a defining factor in academic and career mobility.",
+        "Imoveglobal's collaboration with Dr. Ram Manohar Lohiya National Law University reflects a shared vision:",
+        "1. To empower students with the skills and confidence required to succeed on international platforms.",
+        "2. By bringing structured language training into high-impact academic events, the initiative created a bridge between institutional excellence and global readiness.",
+        "Looking Ahead: Expanding the Partnership",
+        "Building on the success of this collaboration, Imoveglobal is currently in discussions with Dr. Ram Manohar Lohiya National Law University to further expand this partnership.",
+        "As part of these ongoing efforts, there is a strong possibility that the EGPT (English Global Proficiency Test) will be conducted on campus in December. This initiative aims to provide students with:",
+        "• Hands-on exam exposure in real conditions",
+        "• Accurate assessment aligned with global standards",
+        "• A clear pathway toward international academic and career opportunities",
+        "• A Step Toward Building Global Leaders",
+        "This collaboration represents more than a single event—it reflects a long-term commitment to shaping globally competent, confident, and future-ready individuals.",
+        "As the demand for international education and cross-border careers continues to rise, partnerships like these will play a crucial role in preparing students not just to participate—but to lead.",
+        "**\"Practice. Perform. Go Global.\"**",
+        "_— Team Imoveglobal_"
+      ]
+    }
+  ]
+}

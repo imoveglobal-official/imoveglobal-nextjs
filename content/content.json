@@ -1,0 +1,542 @@
+{
+  "brand": {
+    "name": "Imoveglobal",
+    "tagline": "Become a Global Education Partner"
+  },
+  "navigation": [
+    {
+      "name": "Exams",
+      "key": "exams"
+    },
+    {
+      "name": "Study Abroad Scope",
+      "key": "study"
+    },
+    {
+      "name": "Scholarships & Events",
+      "key": "scholarships"
+    },
+    {
+      "name": "News & Blogs",
+      "key": "newsandblogs"
+    },
+    {
+      "name": "EGPT",
+      "key": "more"
+    }
+  ],
+  "cta": {
+    "partnerButton": "Be a Partner",
+    "loginButton": "Login"
+  },
+  "home": {
+    "author": "English Global Preparation Test",
+    "headline": {
+      "prefix": "Establish a",
+      "highlight": "Global Academic",
+      "suffix": "Partnership"
+    },
+    "subtext": {
+      "emphasis": "Everything you need",
+      "line1": "in one place:",
+      "line2": "Comprehensive resources to go from",
+      "beginnerText": "absolute beginner",
+      "toText": "to",
+      "advancedText": "advanced global educator"
+    },
+    "stats": {
+      "studentCount": "Empowering a global learner base of",
+      "enrolledText": "1+ million students",
+      "ratingPlatform": "Trustpilot"
+    },
+    "pricing": {
+      "price": "Free Practice Test for Life!",
+      "description": "Worth ₹16000",
+      "descriptionSmall": "Terms and Conditions Apply"
+    },
+    "heroCard": {
+      "number": "01",
+      "label": "Basics"
+    }
+  },
+  "egpt_primary": {
+    "title": "EGPT Primary",
+    "lessonCount": "13 lessons",
+    "duration": "10h 12m of tutorial",
+    "description": {
+      "line1": "EGPT Primary is an English proficiency test for students",
+      "line2": " aged 8+",
+      "line3": ", designed to build strong academic foundations while developing practical, real-world communication skills"
+    },
+    "lessons": [
+      {
+        "id": "01",
+        "title": "Introduction",
+        "duration": "35m",
+        "isFree": true,
+        "content": "The EGPT Primary test is an English-language assessment designed for students typically aged 8-14 years and older. The standard test is available in a paper-based format and assesses reading comprehension, listening, and writing skills"
+      },
+      {
+        "id": "02",
+        "title": "Benefits",
+        "duration": "23m",
+        "isFree": true,
+        "content": "Young learners often feel encouraged when they see their progress quantified. Earning a certificate or score report can boost a child’s confidence and foster a positive attitude toward learning English. Helps children develop good test-taking habits from an early age."
+      },
+      {
+        "id": "03",
+        "title": "Objectives",
+        "duration": "1h 19m",
+        "isFree": true,
+        "content": "This test is mostly taken in Asia, Europe, Latin America, Middle East. Growth in TOEFL test takers in India (for TOEFL overall) with a 53 % rise in 2024 and 59 % rise in 2025."
+      },
+      {
+        "id": "04",
+        "title": "Scoring",
+        "duration": "1h 19m",
+        "isFree": true,
+        "content": "No pass/fail — it’s a developmental assessment. Scores are scaled, not raw, so they’re consistent across different test versions."
+      }
+    ]
+  },
+  "egpt_junior": {
+    "title": "EGPT Junior",
+    "lessonCount": "6 lessons",
+    "duration": "7h 55m of tutorial",
+    "description": {
+      "line1": "Designed for students aged 11+, focusing on",
+      "line2": "academic English",
+      "line3": "fundamentals and real-world communication skills."
+    },
+    "lessons": [
+      {
+        "id": "01",
+        "title": "Introduction",
+        "duration": "42m",
+        "isFree": false,
+        "content": "The EGPT Junior test is an English-language assessment designed for students typically aged 11–17 years and older. The standard test is available in a paper-based format and assesses reading comprehension, listening, and writing skills."
+      },
+      {
+        "id": "02",
+        "title": "Benefits",
+        "duration": "1h 00m",
+        "isFree": false,
+        "content": "Early assessment of English Skills. Taking an internationally recognized test can boost a child’s confidence. Schools and parents can track improvement over time, helping guide curriculum and learning strategies."
+      },
+      {
+        "id": "03",
+        "title": "Objectives",
+        "duration": "2h 50m",
+        "isFree": true,
+        "content": "Asia dominates these sort of test registrations. This is due to the high demand for English proficiency in schools and bilingual/international programs. Other than that, Middle East, Lebanon, Europe, Latin America also has a demand of these examination. Helps students transition smoothly to TOEFL/IELTS in the future."
+      }
+    ]
+  },
+  "egpt_senior": {
+    "title": "EGPT Senior",
+    "lessonCount": "7 lessons",
+    "duration": "12h 29m of tutorial",
+    "description": {
+      "line1": "Comprehensive assessment for",
+      "line2": "university readiness",
+      "line3": "and advanced communication proficiency."
+    },
+    "lessons": [
+      {
+        "id": "01",
+        "title": "Introduction",
+        "duration": "1h 57m",
+        "isFree": false,
+        "content": "It is used primarily by institutions (universities, language schools, government agencies) to assess the English proficiency of non-native speakers. The test is composed of four sections, which assess your proficiency level in three main skills, listening comprehension, structure and written expression, reading comprehension and speaking."
+      },
+      {
+        "id": "02",
+        "title": "Benefits",
+        "duration": "1h 07m",
+        "isFree": false,
+        "content": "Accurate assessment of English Skills. Provides a foundation for higher-level English tests like EGPT iBT, IELTS, or other academic English assessments. Enables tracking of English progress over time to see improvement. Useful for graduation or promotion requirements in academic programs."
+      },
+      {
+        "id": "03",
+        "title": "Objectives",
+        "duration": "1h 07m",
+        "isFree": false,
+        "content": "More than 13,000 institutions in over 160 countries administer TOEFL /IELTS tests annually. These include universities, language programs, and agencies that use the test for placement, progress monitoring, exit testing, and evaluation. Over 50 Million tests are administered each year across various institutions worldwide."
+      },
+      {
+        "id": "04",
+        "title": "Scoring",
+        "duration": "1h 59m",
+        "isFree": false,
+        "content": "The scoring is conducted in accordance with done as per EGPT & IELTS Standards."
+      }
+    ]
+  },
+  "egpt_unite": {
+    "title": "EGPT Unite",
+    "lessonCount": "6 lessons",
+    "duration": "7h 55m of tutorial",
+    "description": {
+      "line1": "Bridging the gap for",
+      "line2": "beginners",
+      "line3": "to build confidence and essential language skills."
+    },
+    "lessons": [
+      {
+        "id": "01",
+        "title": "Introduction",
+        "duration": "42m",
+        "isFree": false,
+        "content": "Tests English just as the regular TOEIC & IELTS test does, but EGPT UNITE is used for people with lower level English skills: beginner to lower-intermediate level range. Contains 2 parts – Listening and Reading."
+      },
+      {
+        "id": "02",
+        "title": "Benefits",
+        "duration": "1h 00m",
+        "isFree": false,
+        "content": "Motivation: Students and employees get measurable feedback on progress. Progress Tracking: Can be taken multiple times to monitor improvement over time. Adults who are at the beginner or intermediate level. Workplaces wanting to assess employees’ English at entry or intermediate levels."
+      },
+      {
+        "id": "03",
+        "title": "Objectives",
+        "duration": "2h 50m",
+        "isFree": true,
+        "content": "This is a preparation test is similar to TOEIC BRIDGE. Japan and South Korea are historically the largest TOEIC BRIDGE markets, accounting for a majority of global test takers. This used in institutions and corporations in UAE, Saudi Arabia, Indonesia, Malaysia, and similar markets — mainly for English skills tracking or workforce assessment."
+      },
+      {
+        "id": "04",
+        "title": "Scoring",
+        "duration": "1h 59m",
+        "isFree": false,
+        "content": "Beginner → A1, Elementary → A2, Intermediate → B1"
+      }
+    ]
+  },
+  "egpt_braille": {
+    "title": "EGPT Braille",
+    "description": {
+      "line1": "Tests provided for the visually impaired.",
+      "line2": "LAUNCHING SOON"
+    }
+  },
+  "exams": {
+    "title": "Exams",
+    "description": "Explore our comprehensive learning modules designed to help you master new skills.",
+    "modules": [
+      {
+        "id": 1,
+        "title": "Getting Started",
+        "description": "Learn the fundamentals and build a strong foundation."
+      },
+      {
+        "id": 2,
+        "title": "Advanced Topics",
+        "description": "Dive deeper into complex concepts and techniques."
+      }
+    ]
+  },
+  "studyAbroad": {
+    "title": "Study Abroad Scope",
+    "description": "Explore global education opportunities and expand your horizons.",
+    "features": [
+      {
+        "id": 1,
+        "icon": "🏆",
+        "title": "Weekly Contest"
+      },
+      {
+        "id": 2,
+        "icon": "⚡",
+        "title": "Speed Rounds"
+      },
+      {
+        "id": 3,
+        "icon": "🎯",
+        "title": "Skill Tests"
+      }
+    ]
+  },
+  "scholarships": {
+    "title": "Institutional Scholarships & Events",
+    "description": "A selection of the best scholarships and events curated by Imoveglobal's partners.",
+    "howItWorks": [
+      "Browse available prep tests for your institution",
+      "Click on any card to view full details",
+      "Register your query through website to be a partner"
+    ],
+    "items": [
+      {
+        "id": 1,
+        "title": "EGPT PRIMARY + JUNIOR",
+        "institution": "Elite Achievement Awards",
+        "date": "Ongoing Registration",
+        "description": "Comprehensive scholarship program rewarding top performers across 2-Skill and 3-Skill packages with premium prizes including laptops, tablets, bicycles, and exclusive staff appreciation events.",
+        "detailedInfo": {
+          "twoSkillPackage": {
+            "title": "2-Skill Package Awards",
+            "subtitle": "Top 9 Students Across All 3 Divisions",
+            "divisions": [
+              {
+                "grades": "4th & 5th",
+                "rewards": {
+                  "1st": "Sony Headphones",
+                  "2nd": "Smart Watch",
+                  "3rd": "School Kit"
+                }
+              },
+              {
+                "grades": "6th - 8th",
+                "rewards": {
+                  "1st": "Sony Headphones",
+                  "2nd": "Smart Watch",
+                  "3rd": "School Kit"
+                }
+              },
+              {
+                "grades": "9th - 12th",
+                "rewards": {
+                  "1st": "Sony Headphones",
+                  "2nd": "Smart Watch",
+                  "3rd": "School Kit"
+                }
+              }
+            ]
+          },
+          "threeSkillPackage": {
+            "title": "3-Skill Package Awards",
+            "subtitle": "Top 3 Students Across All 3 Divisions",
+            "divisions": [
+              {
+                "grades": "4th & 5th",
+                "rewards": {
+                  "1st": "Bicycle",
+                  "2nd": "Tablet",
+                  "3rd": "School Kit"
+                }
+              },
+              {
+                "grades": "6th - 8th",
+                "rewards": {
+                  "1st": "Sony Headphones",
+                  "2nd": "Tablet",
+                  "3rd": "School Kit"
+                }
+              },
+              {
+                "grades": "9th - 12th",
+                "rewards": {
+                  "1st": "Lenovo Chromebook",
+                  "2nd": "Tablet",
+                  "3rd": "School Kit"
+                }
+              }
+            ]
+          },
+          "events": {
+            "title": "Uptown Staff Appreciation Events",
+            "twoSkillEvent": {
+              "participants": "50 Staff Members",
+              "menu": "2 Appetizers • 1 Drink • 1 Main Course • 1 Dessert"
+            },
+            "threeSkillEvent": {
+              "participants": "60 Staff Members",
+              "menu": "2 Appetizers • 1 Drink • 1 Main Course • 1 Dessert"
+            }
+          }
+        },
+        "image": "/courses/Primary.gif",
+        "socialLinks": {
+          "twitter": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "EGPT SENIOR",
+        "institution": "Premium Achievement Program",
+        "date": "Ongoing Registration",
+        "description": "Advanced scholarship program offering cash prizes, international trips, premium laptops, and exclusive university events for top performers across 2-skill, 3-skill, and 4-skill packages.",
+        "detailedInfo": {
+          "twoSkillPackage": {
+            "title": "2-Skill Package Awards",
+            "subtitle": "Top 3 Students - Cash Prizes",
+            "rewards": [
+              {
+                "position": "1st",
+                "prize": "₹10,000"
+              },
+              {
+                "position": "2nd",
+                "prize": "₹7,000"
+              },
+              {
+                "position": "3rd",
+                "prize": "₹3,000"
+              }
+            ],
+            "event": null
+          },
+          "threeSkillPackage": {
+            "title": "3-Skill Package Awards",
+            "subtitle": "Top 10 Students - Laptops, Tablets & Coupons",
+            "rewards": [
+              {
+                "position": "Top 3",
+                "prize": "Laptops"
+              },
+              {
+                "position": "4th & 5th",
+                "prize": "Tablets"
+              },
+              {
+                "position": "6th - 10th",
+                "prize": "Amazon Coupon ₹2,000 each"
+              }
+            ],
+            "event": {
+              "title": "University Staff Prize Distribution",
+              "participants": "100 Staff Members",
+              "menu": "3 Appetizers • 3 Main Courses • 2 Drinks • 2 Desserts"
+            }
+          },
+          "fourSkillPackage": {
+            "title": "4-Skill Package Awards",
+            "subtitle": "Top 20 Students - International Trips, Laptops & Coupons",
+            "rewards": [
+              {
+                "position": "Top 2",
+                "prize": "Sponsored International Trip (4 Days 3 Nights)"
+              },
+              {
+                "position": "3rd, 4th & 5th",
+                "prize": "Laptops"
+              },
+              {
+                "position": "6th - 10th",
+                "prize": "Amazon Coupon ₹5,000 each"
+              },
+              {
+                "position": "11th - 20th",
+                "prize": "Amazon Coupon ₹2,000 each"
+              }
+            ],
+            "event": {
+              "title": "Grand Prize Distribution Gala",
+              "participants": "120 Staff Members + 20 Prize Winning Students",
+              "menu": "3 Appetizers • 3 Main Courses • 2 Drinks • 2 Desserts • 3 Bread Choices"
+            }
+          }
+        },
+        "image": "/courses/Senior.gif",
+        "socialLinks": {
+          "twitter": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGPT Unite",
+        "institution": "Unite Achievement Program",
+        "date": "Coming Soon",
+        "description": "Funded exchange program across European universities.",
+        "image": "/courses/Unite.gif",
+        "socialLinks": {
+          "twitter": "#",
+          "linkedin": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": " EGPT BRAILLE",
+        "institution": "Coming Soon",
+        "date": "Coming Soon",
+        "description": "Executive education fellowship for people with disabilities.",
+        "image": "/courses/Braille.gif",
+        "socialLinks": {
+          "twitter": "#",
+          "linkedin": "#"
+        }
+      }
+    ],
+    "viewAllButton": "View All Scholarships & Events"
+  },
+  "reviews": {
+    "title": "Reviews of Institutions & success stories",
+    "subtitle": "Wall of Fame",
+    "description": "have joined the course already! Here's a collection of what they're building.",
+    "studentCount": "49,089 Students",
+    "hashtag": "#ImoveglobalJourney",
+    "hashtagPlatform": "Twitter",
+    "filters": [
+      {
+        "key": "all",
+        "label": "All Stories"
+      },
+      {
+        "key": "student",
+        "label": "Students"
+      },
+      {
+        "key": "institution",
+        "label": "Institutions"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "SahilK027",
+        "handle": "@SahilK027",
+        "avatar": "https://ui-avatars.com/api/?name=SK&background=7c3aed&color=fff",
+        "content": "Evolved My Crystal Bird 🦅 into Crystal Horse. 🐴",
+        "institution": "IIT Delhi",
+        "type": "student"
+      },
+      {
+        "id": 2,
+        "name": "Shubham Yelekar",
+        "handle": "@shubu_y",
+        "avatar": "https://ui-avatars.com/api/?name=SY&background=a855f7&color=fff",
+        "content": "Threejs journey christmas challenge : WIP Re-modeled the cat",
+        "institution": "MIT Pune",
+        "type": "student"
+      },
+      {
+        "id": 3,
+        "name": "Priya Sharma",
+        "handle": "@priya_dev",
+        "avatar": "https://ui-avatars.com/api/?name=PS&background=6d28d9&color=fff",
+        "content": "Our students at Delhi Technical University have been excelling with Imoveglobal courses. 15 placements this month! 🎉",
+        "institution": "Delhi Technical University",
+        "type": "institution"
+      },
+      {
+        "id": 4,
+        "name": "Rahul Verma",
+        "handle": "@rahul_3d",
+        "avatar": "https://ui-avatars.com/api/?name=RV&background=7c3aed&color=fff",
+        "content": "Just completed the advanced React course. The projects were amazing! 🚀",
+        "institution": "BITS Pilani",
+        "type": "student"
+      },
+      {
+        "id": 5,
+        "name": "Dr. Anjali Mehta",
+        "handle": "@anjali_edu",
+        "avatar": "https://ui-avatars.com/api/?name=AM&background=a855f7&color=fff",
+        "content": "As Training Head at NIT Trichy, I recommend Imoveglobal to all our CSE students. Excellent curriculum! ⭐",
+        "institution": "NIT Trichy",
+        "type": "institution"
+      },
+      {
+        "id": 6,
+        "name": "Arjun Reddy",
+        "handle": "@arjun_codes",
+        "avatar": "https://ui-avatars.com/api/?name=AR&background=6d28d9&color=fff",
+        "content": "From zero to full-stack developer in 6 months. Thank you Imoveglobal! 💪",
+        "institution": "VIT Vellore",
+        "type": "student"
+      }
+    ],
+    "loadMoreButton": "Load More Stories"
+  }
+}

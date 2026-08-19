@@ -1,0 +1,27 @@
+<svg width="100" height="100" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <g stroke="url(#orangeGradient)" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Outer shape -->
+    <path d="M3.76 17.01h12.48C17.34 15.63 18 13.9 18 12c0-4.41-3.58-8-8-8s-8 3.59-8 8c0 1.9.66 3.63 1.76 5.01z"/>
+
+    <!-- Small nodes -->
+    <circle cx="10" cy="6" r="0.8"/>
+    <circle cx="5" cy="8" r="0.8"/>
+    <circle cx="4" cy="13" r="0.8"/>
+    <circle cx="10" cy="13" r="0.8"/>
+    <circle cx="16" cy="13" r="0.8"/>
+
+    <!-- Center arrow / pointer -->
+    <path d="M8.52 11.4c.84-.83 6.51-3.5 6.51-3.5s-2.66 5.68-3.49 6.51c-.84.84-2.18.84-3.02 0-.83-.83-.83-2.18 0-3.01z"/>
+
+  </g>
+
+  <defs>
+    <linearGradient id="orangeGradient" x1="10" y1="4" x2="10" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9680"/>
+      <stop offset="1" stop-color="#FF6847"/>
+    </linearGradient>
+  </defs>
+
+</svg>
