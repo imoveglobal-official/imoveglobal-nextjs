@@ -919,8 +919,8 @@ const InteractiveGlobe = () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current)
       }
-      if (rendererRef.current && containerRef.current) {
-        containerRef.current.removeChild(rendererRef.current.domElement)
+      if (renderer && container) {
+        container.removeChild(renderer.domElement)
       }
       renderer.dispose()
     }

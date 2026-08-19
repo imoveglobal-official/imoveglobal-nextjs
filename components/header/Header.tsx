@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { useContent } from '@/context/ContentContext'
 import JobDetailsPopover from '@/components/common/JobDetailsPopover'
@@ -131,7 +132,7 @@ const Header = () => {
           {/* Left - Logo + Navigation */}
           <div className="flex items-center gap-8">
             {/* Logo */}
-            <a
+            <Link
               href="/"
               onClick={handleLogoClick}
               className=" logo-wave flex items-center gap-2 group"
@@ -149,7 +150,7 @@ const Header = () => {
                   EGPT
                 </sup>
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-1">

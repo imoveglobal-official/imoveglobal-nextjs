@@ -1,24 +1,22 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 const ExamsSection = () => {
   const searchParams = useSearchParams()
-  const [activeExam, setActiveExam] = useState<'TOEFL' | 'IELTS' | null>(null)
+  const section = searchParams.get('section')
 
-  // Scroll to section when component mounts or location changes
+  // Determine exam type from section ID (derived from the query string)
+  const activeExam: 'TOEFL' | 'IELTS' | null = section?.startsWith('toefl')
+    ? 'TOEFL'
+    : section?.startsWith('ielts')
+      ? 'IELTS'
+      : null
+
+  // Scroll to the matching section when the query string changes
   useEffect(() => {
-    const section = searchParams.get('section')
-
     if (section) {
-      // Determine exam type from section ID
-      if (section.startsWith('toefl')) {
-        setActiveExam('TOEFL')
-      } else if (section.startsWith('ielts')) {
-        setActiveExam('IELTS')
-      }
-
       setTimeout(() => {
         const element = document.getElementById(section)
         if (element) {
@@ -26,7 +24,7 @@ const ExamsSection = () => {
         }
       }, 100)
     }
-  }, [searchParams])
+  }, [section])
 
   // Exam sections data
   const examSections = {
