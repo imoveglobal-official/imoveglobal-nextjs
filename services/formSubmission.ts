@@ -1,11 +1,10 @@
 /**
  * Form Submission Service
- * Handles form submissions to Google Apps Script
+ *
+ * Submits registration/lead form data to the app's own `/api/leads` endpoint,
+ * which persists it to the shared MongoDB database. The admin app reads leads
+ * from that same database.
  */
-
-// This will be replaced with your actual Google Apps Script Web App URL
-const SCRIPT_URL = process.env.NEXT_PUBLIC_FORM_SCRIPT_URL || 'YOUR_GOOGLE_SCRIPT_URL_HERE'
-const SUBMISSION_TOKEN = process.env.NEXT_PUBLIC_FORM_SUBMISSION_TOKEN || 'YOUR_FORM_TOKEN_HERE'
 
 export type UserType = 'institute' | 'myself'
 
@@ -36,79 +35,34 @@ export interface SubmitResult {
 }
 
 /**
- * Format form data for email
+ * Submit form data to the MongoDB-backed API route.
  */
-const formatFormData = (data: RegistrationFormData, userType: UserType) => {
-  const timestamp = new Date().toLocaleString('en-IN', {
-    timeZone: 'Asia/Kolkata',
-    dateStyle: 'full',
-    timeStyle: 'long',
-  })
-
-  if (userType === 'institute') {
-    return {
-      type: 'Institute Registration',
-      timestamp,
-      fields: {
-        'Name': data.name,
-        'Email': data.email,
-        'Contact': data.contact,
-        'City': data.city,
-        'State': data.state,
-        'Institute': data.institute,
-        'Designation': data.designation,
-        'Reason for Partnership': data.reason,
-        'Mode of Communication': data.communicationMode,
-        'Preferred Time': data.preferredTime,
-        'Student Count': data.studentCount || 'N/A',
-        'Additional Notes': data.notes || 'None',
-      },
-    }
-  } else {
-    return {
-      type: 'Individual Registration',
-      timestamp,
-      fields: {
-        'Name': data.name,
-        'Email': data.email,
-        'Contact': data.contact,
-        'City': data.city,
-        'State': data.state,
-        'Institute': data.institute,
-        'Education Level': data.education,
-        'Reason for Partnership': data.reason,
-        'Mode of Communication': data.communicationMode,
-        'Preferred Time': data.preferredTime,
-        'Additional Notes': data.notes || 'None',
-      },
-    }
-  }
-}
-
-/**
- * Submit form data to Google Apps Script
- */
-export const submitForm = async (formData: RegistrationFormData, userType: UserType): Promise<SubmitResult> => {
+export const submitForm = async (
+  formData: RegistrationFormData,
+  userType: UserType
+): Promise<SubmitResult> => {
   try {
-    const formattedData = formatFormData(formData, userType)
-
-    await fetch(SCRIPT_URL, {
+    const response = await fetch('/api/leads', {
       method: 'POST',
-      mode: 'no-cors', // Important for Google Apps Script
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...formattedData,
-        token: SUBMISSION_TOKEN,
-      }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...formData, type: userType }),
     })
 
-    // Note: With 'no-cors' mode, we can't read the response
-    // But if no error is thrown, the submission was successful
+    const data = await response.json().catch(() => ({}))
+
+    if (!response.ok) {
+      return {
+        success: false,
+        message:
+          (data && data.message) ||
+          'Failed to submit form. Please try again or contact support.',
+        error: data?.errors ? data.errors.join(', ') : `HTTP ${response.status}`,
+      }
+    }
+
     return {
       success: true,
-      message: 'Form submitted successfully!',
+      message: (data && data.message) || 'Form submitted successfully!',
     }
   } catch (error) {
     console.error('Form submission error:', error)
@@ -121,11 +75,7 @@ export const submitForm = async (formData: RegistrationFormData, userType: UserT
 }
 
 /**
- * Validate script URL is configured
+ * The form now posts to a first-party API route, so it is always configured.
+ * Kept for backwards compatibility with existing callers.
  */
-export const isConfigured = (): boolean => {
-  const hasUrl = Boolean(SCRIPT_URL) && SCRIPT_URL !== 'YOUR_GOOGLE_SCRIPT_URL_HERE'
-  const hasToken = Boolean(SUBMISSION_TOKEN) && SUBMISSION_TOKEN !== 'YOUR_FORM_TOKEN_HERE'
-
-  return hasUrl && hasToken
-}
+export const isConfigured = (): boolean => true
